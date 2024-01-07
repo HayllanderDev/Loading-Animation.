@@ -17,7 +17,6 @@
                display: flex;
                align-items: center;
                justify-content: center;
-
             }
             h3,h4{
                 color: yellow;
@@ -33,19 +32,20 @@
             }
             @keyframes spin{
                 100%{
-                    transform: rotate(360);
+                    -webkit-animation: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
                 }
             }
         </style>
     </head>
     <body>
-        <div class="Container">
+        <div class="container">
            <div>
             <h4>LOADING</h4>
             <h3>ANIMATION</h3>
             <div class="circle"></div>
            </div> 
         </div>
-        
     </body>
 </html>
